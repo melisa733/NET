@@ -1,0 +1,35 @@
+﻿@model List<StudentModel>
+@{
+    ViewData["Title"] = "Students";
+}
+
+<h2>Students</h2>
+
+@if (Model.Count == 0)
+{
+    <h3>There is no students yet!</h3>
+}
+else
+{
+    <table class="table table-striped">
+        <tr>
+            <th>Surname</th>
+            <th>Name</th>
+            <th>BirthYear</th>
+            <th>Grade</th>
+            <th></th>
+        </tr>
+
+        @foreach (var student in Model) 
+        { 
+    <tr>
+        <th>@student.Surname</th>
+        <th>@student.Name</th>
+        <th>@student.BirthDay</th>
+        <th>@student.Grade</th>
+        <th><a asp-controller="Mark" asp-action="StudentMarks" asp-route-id="@student.ID">View students marks</a></th>
+    </tr>
+        }
+    </table>
+
+}

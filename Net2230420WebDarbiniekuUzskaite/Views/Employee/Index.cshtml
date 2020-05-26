@@ -1,0 +1,35 @@
+﻿@model List<EmployeeModel>
+@{
+    ViewData["Title"] = "Employees";
+}
+
+<h2>Employees</h2>
+
+@if (Model.Count > 0)
+{
+    <table class="table table-striped">
+        <tr>
+            <th>Department</th>
+            <th>Surname</th>
+            <th>Name</th>
+            <th>Birth Date</th>
+            <th>Position</th>
+        </tr>
+        @foreach (var employee in Model)
+        {
+            <tr>
+                <th>@employee.Department</th>
+                <th>@employee.Surname</th>
+                <th>@employee.Name</th>
+                <th>@employee.BirthYear</th>
+                <th>@employee.Position</th>
+            </tr>
+        }
+    </table>
+}
+else
+{
+    <div>
+        There is no employees yet!
+    </div>
+}
