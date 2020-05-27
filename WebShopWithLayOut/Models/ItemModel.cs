@@ -1,15 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace WebShopWithLayOut.Logic.DB
+namespace WebShopWithLayOut.Models
 {
-    public partial class Items
+    public class ItemModel
     {
-        public Items()
-        {
-            UserCart = new HashSet<UserCart>();
-        }
-
         public int Id { get; set; }
         public string Name { get; set; }
         public int CategoryId { get; set; }
@@ -17,7 +14,5 @@ namespace WebShopWithLayOut.Logic.DB
         public string Description { get; set; }
         public string Image { get; set; }
 
-        public Categories Category { get; set; }
-        public ICollection<UserCart> UserCart { get; set; }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace NET2WebShopWithLayout.Logic.DB
+namespace WebShopWithLayOut.Logic.DB
 {
     public partial class Users
     {

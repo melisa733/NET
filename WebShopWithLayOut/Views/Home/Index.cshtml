@@ -1,0 +1,23 @@
+﻿@model HomeModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-sm-4">
+        @foreach (var category in Model.Categories.Where(c => c.ParentId == null))
+        {
+            <div class="list-group">
+                <a href="#" class="list-group-item active">
+                    @category.Name
+                </a>
+                @foreach (var childCategory in Model.Categories.Where(c => c.ParentId == category.Id))
+                {
+                    <a asp-controller="Item" asp-action="Index" asp-route-id="@childCategory.Id" class="list-group-item">@childCategory.Name<span class="badge">0</span></a>
+                }
+            </div>
+        }
+    </div>
+    
+</div>
+

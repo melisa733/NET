@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace NET2WebShopWithLayout.Logic.DB
+namespace WebShopWithLayOut.Logic.DB
 {
     public partial class DBContext2 : DbContext
     {

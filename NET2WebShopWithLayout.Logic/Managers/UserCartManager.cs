@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NET2WebShopWithLayout.Logic
+namespace WebShopWithLayOut.Logic
 {
     class UserCartManager
     {

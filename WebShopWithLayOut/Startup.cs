@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Net2Lecture180420WebShopRight
+namespace WebShopWithLayOut
 {
     public class Startup
     {

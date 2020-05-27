@@ -20,6 +20,9 @@ namespace Net2Lecture180420WebShopRight
 
         public static ItemModel ToItemModel(this Items i)
         {
+            if (i == null) {
+                return null;
+            }
             return new ItemModel()
             {
                 ID = i.Id,

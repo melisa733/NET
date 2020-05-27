@@ -1,0 +1,30 @@
+﻿@model List<CategoryModel>
+@{
+    ViewData["Title"] = "Categories";
+}
+
+<h2>Products in Category</h2>
+
+<h2>Categories</h2>
+@if (Model.Count > 0)
+{
+    <table class="table table-striped">
+        <tr>
+            <th>Name</th>
+            <th></th>
+        </tr>
+        @foreach (var category in Model)
+        {
+            <tr>
+                <td>@category.Name</td>
+                <td><a asp-controller="Item" asp-action="Index" asp-route-id="@category.ID">View Products</a></td>
+            </tr>
+        }
+    </table>
+}
+else
+{
+    <div>
+        Šajā kategorijā nav preces!
+    </div>
+}

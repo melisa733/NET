@@ -18,16 +18,5 @@ namespace Net2Lecture180420WebShopRight.Models
         [Display(Name = "Name: ")]
         public string Name { get; set; }
 
-        /*
-         [Required]
-        [DataType(DataType.EmailAdress)]
-        [StringLength(200)]
-        [Display(Name = "E-mail")]
-
-        [Required]
-        [DataType(DataType.PhoneNumber)]
-        [StringLength(15)]
-        [Display(Name = "Phone number")]
-         */
     }
 }

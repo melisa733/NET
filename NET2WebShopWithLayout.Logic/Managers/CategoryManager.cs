@@ -1,12 +1,12 @@
-﻿using NET2WebShopWithLayout.Logic.DB;
+﻿using WebShopWithLayOut.Logic.DB;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace NET2WebShopWithLayout.Logic
+namespace WebShopWithLayOut.Logic
 {
-    public static class CategoryManager
+    public class CategoryManager
     {
         public static List<Categories> GetAll()
         {
